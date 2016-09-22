@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>KS Promo</title>
+    <link rel="stylesheet" href="themes/KSPROMO.min.css" />
+<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="themes/KSPROMO.min.css" />
+<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:400,700" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	
+	<link rel="apple-touch-icon" href="images/appicon.png" type="" />
+	
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	
+	<link rel="apple-touch-startup-image" href="images/splash.png" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		
+	
+
+
+	<script src="_/js/myscript.js"></script>
+	<link rel="stylesheet" href="_/css/mystyles.css" />
+</head>
+<body>
+	<!-- Page: home -->
+	<div id="home"
+		data-role="page"
+		data-title="View Source: Home">
+         <div data-role="content">
+			<img src="images/viewsourcelogo.png" alt="View Source Logo" />
+		</div>
+		<div data-role="controlgroup">
+			<a href="#blog" 
+				data-role="button"
+				data-icon="bullets"
+			>Actualités</a>
+			<a href="#videos" 
+				data-role="button"
+				data-icon="video"
+			>Videos</a>
+			<a href="#photos" 
+				data-role="button"
+				data-icon="calendar"
+			>Événement</a>
+			<a href="#tweets" 
+				data-role="button"
+				data-icon="audio"
+			>Musiques</a>
+		</div><!-- links -->
+	</div><!-- page -->
+
+	<!-- Page: blog -->
+	<div id="blog"
+		data-role="page"
+         data-theme="a"
+		data-title="View Source: Blog">
+		<div data-role="header"
+			data-position="fixed"
+			data-id="vs_header">
+			<h1>Actualites</h1>
+			<a href="#home"
+				data-icon="home"
+				data-iconpos="notext"
+				>Home</a>
+			<a href="#info"
+				data-icon="info"
+				data-iconpos="notext"
+				data-rel="dialog"
+				>Info</a>
+		</div><!-- header -->
+		<div
+			data-role="content"
+			id="postlist">
+            
+           <ul data-role="listview" data-theme="c"  data-filter="true" data-filter-placeholder="recherche...">
+  <li><a href="#Carlo">
+      <img src="img/carlo.png">
+      <h3>Carlo Vieux</h3>
+      <p>Plus de musique sans Carimi !</p>
+      </a>
+    </li>
+      
+     <li><a href="#gracia">
+      <img src="img/gracia.jpg">
+      <h3>Gracia Delva</h3>
+      <p>Déjà 20 ans de musique!</p>
+      </a>
+    </li>
+               
+  <li><a href="#fantomb">
+      <img src="img/fantom.jpg">
+      <h3>FANTOM TACLE LE RHUM BAKARA</h3>
+      <p>Bay Fantom kou pa ba l Bakara!</p>
+      </a>
+    </li>
+ <li><a href="#wendyfantom">
+      <img src="img/fantomwendy.png">
+      <h3>DUEL WENDYYYY FANTOM</h3>
+      <p>DUEL WENDYYYY FANTOM : WENDYYYY A CONNU UN TRÈS MAUVAIS MOMENT AU CANADA</p>
+      </a>
+    </li>
+               
+    <li><a href="#tidjov">
+      <img src="img/tijdoezeni.png">
+      <h3>T-JOE ZENNY VICTIME D'UN TERRIBLE ACCIDENT DE LA ROUTE</h3>
+      <p>T-JOE ZENNY VICTIME D'UN TERRIBLE ACCIDENT DE LA ROUTE: LE CHANTEUR VA BIEN ET S'EXPLIQUE</p>
+      </a>
+    </li>
+               
+    <li><a href="#">
+      <img src="img/fantom.jpg">
+      <h3>Fantom Anonse nouvo albom li</h3>
+      <p>nan yon rankont manb KsPromo ak Izonlan li tou profite anonse albom li</p>
+      </a>
+    </li>
+</ul> 
+            
+		</div><!-- content -->
+		<div data-role="footer"
+			data-position="fixed"
+			data-theme="a"
+			data-id="vs_footer">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" 
+					data-role="button"
+					data-icon="home"
+					>Home</a></li>
+					<li><a href="#videos" 
+					data-role="button"
+					data-icon="video"
+					>Videos</a></li>
+					<li><a href="#photos" 
+					data-role="button"
+					data-icon="calendar"
+					>Événement</a></li>
+					<li><a href="#tweets" 
+					data-role="button"
+					data-icon="audio"
+					>Musiques</a></li>
+				</ul>
+			</div><!-- navbar -->
+		</div><!-- footer -->
+	</div><!-- page -->
+
+    <!-- article -->
+	<div id="Carlo"
+		data-role="page">
+		<div data-role="header"
+			data-position="fixed"
+			data-theme="a">
+			<a href="#blog"
+				data-icon="back"
+				data-iconpos="notext"
+				data-direction="reverse">Videos</a>
+			<h1>Actualites</h1>
+		</div><!-- header-->
+		<div data-role="content">
+            <h3> Plus de musique sans Carimi !</h3>
+            <img id="imgpost" src="img/carlo.png">
+            
+			<p>Après la disparition de Carimi de la scène musicale haïtienne, Carlo Vieux, l’un des membres fondateurs de cette formation, n’entend pas continuer à faire de la musique si ce n’est pas avec l’équipe de Carimi. Intégrer un autre groupe avec d’autres musiciens ou faire une carrière solo ne l’intéresse pas (source Le nouvelliste)</p>
+		</div><!-- content -->
+	</div><!-- page -->
+    
+     <!-- fantomwendy -->
+	<div id="wendyfantom"
+		data-role="page">
+		<div data-role="header"
+			data-position="fixed"
+			data-theme="a">
+			<a href="#blog"
+				data-icon="back"
+				data-iconpos="notext"
+				data-direction="reverse">Videos</a>
+			<h1>Actualites</h1>
+		</div><!-- header-->
+		<div data-role="content">
+            <h3> DUEL WENDYYYY FANTOM : WENDYYYY A CONNU UN TRÈS MAUVAIS MOMENT AU CANADA
+            </h3>
+            
+            <h5>Un duel tant attendu, un duel renvoyé vu la première fois Fantom avait fait un recul, un Fantom rempli d’expérience face à un Wendyyyy au pic de sa carrière</5>
+            <img id="imgpost" src="img/fantomwendy.png">
+            
+			<p>Comme toujours Fantom a joué ses meilleures cartes, il a tout fait pour enflammer le public, il n'a chanté aucune chanson complètement, avec son grand répertoire avec Barikad en feat ou en solo, celui qui se nomme le papa du rap a utilisé qu'un seul verse de chacun de ses hits jusqu'au carnaval 2016. 
+  
+Wendyyyy avait bien débuté, mais s'est arrêté pour se plaindre de la qualité du son et parlait de Boycott, il a joué des tubes complétement ce qui normalement peut fatiguer un public. Ses freestyles remplis de mots.... N'étaient  pas les bienvenu a Montréal et quand il demandait a ses fans "Mete W a anle epi di Wendyyyy" eux ils criaient Fantom a la place de Wendyyyy. Une capsule que Fantom a partagé sur son compte personnel avec le titre de son 5e album solo "PWEN FINAL" <br> En Mauvais Perdant, Wendyyyy a partagé une vidéo sur Facebook pour répondre à Fantom en présentant le trophée qu'il a reçu au canada disant qu'il serait le meilleur rappeur en 2016, mais pour Fantom confiant de sa victoire n’a fait que partager une video de Wendyyyy qui ne pouvait guider le public. 
+  
+Daniel Darinus dit Fantom a remporté le 2e face à face... Pwen Final</p>
+		</div><!-- content -->
+	</div><!-- page -->
+    
+    <!-- article -->
+	<div id="gracia"
+		data-role="page">
+		<div data-role="header"
+			data-position="fixed"
+			data-theme="a">
+			<a href="#blog"
+				data-icon="back"
+				data-iconpos="notext"
+				data-direction="reverse">Videos</a>
+			<h1>Actualites</h1>
+		</div><!-- header-->
+		<div data-role="content">
+            <h3> Déjà 20 ans de musique pour Gracia Delva !</h3>
+            <img id="imgpost" src="img/gracia.jpg">
+            
+			<p>Enfant unique, le fils de Titine est marié avec Lynda Arney. Autodidacte en chanson, Gracia Delva a chanté pour la première fois en 1987 à CJDCE à Marchand-Dessalines. En 2016, on parle des vingt ans de carrière dans la musique pour un Gracia Delva qui se passe de présentation. Il a fait son nom avec des groupes musicaux comme Gerostar, Djakout Mizik, Zenglen (source Le nouvelliste)</p>
+		</div><!-- content -->
+	</div><!-- page -->
+    
+    <!-- article ti djo viktim-->
+	<div id="tidjov"
+		data-role="page">
+		<div data-role="header"
+			data-position="fixed"
+			data-theme="a">
+			<a href="#blog"
+				data-icon="back"
+				data-iconpos="notext"
+				data-direction="reverse">Videos</a>
+			<h1>Actualites</h1>
+		</div><!-- header-->
+		<div data-role="content">
+            <h3> T-JOE ZENNY VICTIME D'UN TERRIBLE ACCIDENT DE LA ROUTE: LE CHANTEUR VA BIEN ET S'EXPLIQUE</h3>
+            <img id="imgpost" src="img/tijdoezeni.png">
+            
+			<p>
+Le chanteur de Kreyol la, T-jo Zenny, a été impliqué dans un accident de la route ce matin en rentrant d’une prestation à Torbeck.  Comme l’a expliqué le chanteur dans un poste sur Instagram sa voiture aurait atterrit le long d’une ravine après avoir essayé d’éviter une collision imminent  avec une moto ; ce qui a entrainé la crevaison de l’un des pneus de la voiture du chanteur et a provoqué l’accident.  L’artiste a aussi profité du poste pour démentir les rumeurs laissant croire que son fils est en train de recevoir des soins à l’hôpital ; puisqu’il était seul à bord de la voiture et que, plus de peur que de mal, il se porte bien. Une très bonne nouvelle pour la musique haïtienne qui, comme on le sait, a essuyé beaucoup de pertes ces deux dernières années. (Source TaptapMag) </p>
+		</div><!-- content -->
+	</div><!-- page -->
+    
+    
+     <!-- article fantom tacle bacara -->
+	<div id="fantomb"
+		data-role="page">
+		<div data-role="header"
+			data-position="fixed"
+			data-theme="a">
+			<a href="#blog"
+				data-icon="back"
+				data-iconpos="notext"
+				data-direction="reverse">Videos</a>
+			<h1>Actualites</h1>
+		</div><!-- header-->
+		<div data-role="content">
+            <h3>FANTOM TACLE LE RHUM BAKARA, SPONSOR DU GROUPE BARIKAD CREW, DANS UNE COURTE VIDÉO</h3>
+            <img id="imgpost" src="img/fantom.jpg">
+            
+			<p>Bay Fantom kou pa ba l Bakara! Je sais que ce n’est que mon interprétation, mais je trouve qu’entre mon accroche et les propos de Fantom à l’encontre du rhum Bakara dans une courte vidéo mise en ligne par le bloggeur Jhanedouze, il n’y a pas vraiment de différence, d’ailleurs ma phrase est loin d’être aussi méchante que celles du Tapajèl; méchante dans le sens que Bakara est un sponsor du groupe Barikad Crew et de l’artiste.
+</p>
+		</div><!-- content -->
+	</div><!-- page -->
+
+
+
+	<!-- Page: Videos -->
+	<div id="videos"
+		data-role="page"
+		data-title="View Source: Videos">
+		<div data-role="header"
+			data-position="fixed"
+			data-id="vs_header">
+			<h1>Videos</h1>
+			<a href="#home"
+				data-icon="home"
+				data-iconpos="notext"
+				>Home</a>
+			<a href="#info"
+				data-icon="info"
+				data-iconpos="notext"
+				data-rel="dialog"
+				>Info</a>
+		</div><!-- header -->
+		<div data-role="content">
+
+	<div data-role="content"data-theme="c">
+		 <ul data-role="listview" data-inset="true" data-filter="true" id="videolist">
+        <li>
+            <a href="videos/Natural_Bliss_Ft_Fantom_BRI_A.mp4" download>
+  <img border="0" src="img/fantom.jpg" alt="W3Schools" >
+                <h1>Natural bliss feat Fantom</h1>
+            <p>Cliquer pour telecharger</p>
+</a>
+        
+             
+            </li>
+             
+             <li>
+             <div class="card">
+	<div class="card-image">
+		<img alt="video" src="img/videotutumb/jperrybicRemix.png" />
+		<h3>J.Perry Ft. Admiral T, BIC et Gardy Girault</h3>
+        
+	</div>
+      <h1>Aba Blabla (remix)</h1> 
+     <a href="videos/Aba%20Blabla%20(remix)%20J.Perry%20Ft.%20Admiral%20T,%20BIC%20&%20Gardy%20Girault%20(OFFICIAL%20VIDEO).mp4" download="J_Perry_Abablabla_Remix">            <button data-icon="arrow-d">Telecharger</button></a>
+</div>
+            
+             
+            </li>
+             
+             <li>
+             <div class="card">
+	<div class="card-image">
+		<img alt="video" src="img/videotutumb/wadnerpeyizanlakoulakay.png" />
+		<h3>Wadner Peyizan</h3>
+        
+	</div>
+      <h1>Nan lakou lakay </h1> 
+     <a href="videos/Nan%20lakou%20lakay%20%5B%20Wadner%20Peyizan%20%5D%20officiel%20music%20video%20HD1080p.mp4" download="Wadner_Peyizan_nan_lakou_lakay">            <button data-icon="arrow-d">Telecharger</button></a>
+</div>
+            
+             
+            </li>
+         </ul>
+	</div><!-- content -->
+
+		</div><!-- content -->
+		
+		<div data-role="footer"
+			data-position="fixed"
+			data-id="vs_footer">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" 
+					data-role="button"
+					data-icon="home"
+					>Home</a></li>
+					<li><a href="#blog" 
+					data-role="button"
+					data-icon="bullets"
+					>Actualites</a></li>
+					<li><a href="#photos" 
+					data-role="button"
+					data-icon="calendar"
+					>Événement</a></li>
+					<li><a href="#tweets" 
+					data-role="button"
+					data-icon="audio"
+					>Musiques</a></li>
+				</ul>
+			</div><!-- navbar -->
+		</div><!-- footer -->
+	</div><!-- page -->
+	
+	<div id="videoplayer"
+		data-role="page">
+		<div data-role="header"
+			data-position="fixed"
+			data-theme="a">
+			<a href="#videos"
+				data-transition="fade"
+				data-icon="back"
+				data-iconpos="notext"
+				data-direction="reverse"
+				>Videos</a>
+			<h1>Videos</h1>
+		</div><!-- header -->
+		<div data-role="content">
+			<div id="myplayer"></div>
+		</div><!-- content -->
+	</div><!-- page -->
+	
+    <!-- Page: nouvokonpa -->
+	<div id="nouvokonpa"
+		data-role="page"
+		data-title="View Source: Nouvokonpa">
+		<div data-role="header"
+			data-position="fixed"
+			data-id="vs_header">
+			<h1>Nouveaux Compas</h1>
+			<a href="#home"
+				data-icon="home"
+				data-iconpos="notext"
+				>Home</a>
+			<a href="#info"
+				data-icon="info"
+				data-iconpos="notext"
+				data-rel="dialog"
+				>Info</a>
+		</div><!-- header -->
+		<div data-role="content">
+
+	<div data-role="content">
+		 <ul data-role="listview" data-inset="true" data-filter="true" >
+        
+        
+        </ul>
+	</div><!-- content -->
+
+		</div><!-- content -->
+		
+		<div data-role="footer"
+			data-position="fixed"
+			data-id="vs_footer">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" 
+					data-role="button"
+					data-icon="home"
+					>Home</a></li>
+					<li><a href="#blog" 
+					data-role="button"
+					data-icon="bullets"
+					>Actualites</a></li>
+					<li><a href="#photos" 
+					data-role="button"
+					data-icon="calendar"
+					>Événement</a></li>
+					<li><a href="#tweets" 
+					data-role="button"
+					data-icon="audio"
+					>Musiques</a></li>
+				</ul>
+			</div><!-- navbar -->
+		</div><!-- footer -->
+	</div><!-- page -->
+    
+    <!-- Page: Rap Kreyol -->
+	<div id="nouvorap"
+		data-role="page"
+		data-title="View Source: Nouvorap">
+		<div data-role="header"
+			data-position="fixed"
+			data-id="vs_header">
+			<h1>Nouveaux Rap Kreyol</h1>
+			<a href="#home"
+				data-icon="home"
+				data-iconpos="notext"
+				>Home</a>
+			<a href="#info"
+				data-icon="info"
+				data-iconpos="notext"
+				data-rel="dialog"
+				>Info</a>
+		</div><!-- header -->
+		<div data-role="content">
+
+	<div data-role="content">
+		 <ul data-role="listview" data-inset="true" data-filter="true" >
+        <li>
+            <div class="card">
+	<div class="card-image">
+		<a href="Musiques/G_Bobby_feat_Dug_G_-_Antouraj_Mwen.mp3"  download="G_boby"> 
+        <img id="ban" alt="home" src="img/MusicT/jboby.png" /></a>
+		<div class="banner"></div>
+		<h2>G-Boby bon flo ft Dug-G</h2>
+	</div>
+	<p>Antouraj mwen</p>
+                
+                <div id="wrapper">
+			<audio preload="auto" controls>
+				<source src="Musiques/G_Bobby_feat_Dug_G_-_Antouraj_Mwen.mp3">
+			</audio>
+			
+		</div>
+</div>
+             </li>
+        
+        </ul>
+	</div><!-- content -->
+
+		</div><!-- content -->
+		
+		<div data-role="footer"
+			data-position="fixed"
+			data-id="vs_footer">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" 
+					data-role="button"
+					data-icon="home"
+					>Home</a></li>
+					<li><a href="#blog" 
+					data-role="button"
+					data-icon="bullets"
+					>Actualites</a></li>
+					<li><a href="#photos" 
+					data-role="button"
+					data-icon="calendar"
+					>Événement</a></li>
+					<li><a href="#tweets" 
+					data-role="button"
+					data-icon="audio"
+					>Musiques</a></li>
+				</ul>
+			</div><!-- navbar -->
+		</div><!-- footer -->
+	</div><!-- page -->
+    
+    <!-- Page: Nouvo Racine -->
+	<div id="nouvorasin"
+		data-role="page"
+		data-title="View Source: nouvorasin">
+		<div data-role="header"
+			data-position="fixed"
+			data-id="vs_header">
+			<h1>Nouveaux Racine</h1>
+			<a href="#home"
+				data-icon="home"
+				data-iconpos="notext"
+				>Home</a>
+			<a href="#info"
+				data-icon="info"
+				data-iconpos="notext"
+				data-rel="dialog"
+				>Info</a>
+		</div><!-- header -->
+		<div data-role="content">
+
+	<div data-role="content">
+		 <ul data-role="listview" data-inset="true" data-filter="true" >
+        
+        
+        </ul>
+	</div><!-- content -->
+
+		</div><!-- content -->
+		
+		<div data-role="footer"
+			data-position="fixed"
+			data-id="vs_footer">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" 
+					data-role="button"
+					data-icon="home"
+					>Home</a></li>
+					<li><a href="#blog" 
+					data-role="button"
+					data-icon="bullets"
+					>Actualites</a></li>
+					<li><a href="#photos" 
+					data-role="button"
+					data-icon="calendar"
+					>Événement</a></li>
+					<li><a href="#tweets" 
+					data-role="button"
+					data-icon="audio"
+					>Musiques</a></li>
+				</ul>
+			</div><!-- navbar -->
+		</div><!-- footer -->
+	</div><!-- page -->
+    
+    <!-- Page: Rrecherche -->
+	<div id="search"
+		data-role="page"
+		data-title="View Source: Search">
+		<div data-role="header"
+			data-position="fixed"
+			data-id="vs_header">
+			<h1>Recherche...</h1>
+			<a href="#home"
+				data-icon="home"
+				data-iconpos="notext"
+				>Home</a>
+			<a href="#info"
+				data-icon="info"
+				data-iconpos="notext"
+				data-rel="dialog"
+				>Info</a>
+		</div><!-- header -->
+		<div data-role="content">
+
+	<div data-role="content">
+		 <ul data-role="listview" data-theme="c"  data-filter="true" data-filter-placeholder="recherche..."data-filter-reveal="true" >
+        
+        
+        </ul>
+	</div><!-- content -->
+
+		</div><!-- content -->
+		
+		<div data-role="footer"
+			data-position="fixed"
+			data-id="vs_footer">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" 
+					data-role="button"
+					data-icon="home"
+					>Home</a></li>
+					<li><a href="#blog" 
+					data-role="button"
+					data-icon="bullets"
+					>Actualites</a></li>
+					<li><a href="#photos" 
+					data-role="button"
+					data-icon="calendar"
+					>Événement</a></li>
+					<li><a href="#tweets" 
+					data-role="button"
+					data-icon="audio"
+					>Musiques</a></li>
+				</ul>
+			</div><!-- navbar -->
+		</div><!-- footer -->
+	</div><!-- page -->
+	
+	<!-- Page: Photos -->
+	<div id="photos"
+		data-role="page"
+		data-title="View Source: Photos">
+		<div data-role="header"
+			data-position="fixed"
+			data-id="vs_header">
+			<h1>Événement</h1>
+			<a href="#home"
+				data-icon="home"
+				data-iconpos="notext"
+				>Home</a>
+			<a href="#info"
+				data-icon="info"
+				data-iconpos="notext"
+				data-rel="dialog"
+				>Info</a>
+		</div><!-- header -->
+		
+		<div data-role="content"data-theme="a">
+			
+		</div><!-- content -->
+		
+		<div data-role="footer"
+			data-position="fixed"
+			data-id="vs_footer">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" 
+					data-role="button"
+					data-icon="home"
+					>Home</a></li>
+					<li><a href="#blog" 
+					data-role="button"
+					data-icon="bullets"
+					>Actualites</a></li>
+					<li><a href="#videos" 
+					data-role="button"
+					data-icon="video"
+					>Videos</a></li>
+					<li><a href="#tweets" 
+					data-role="button"
+					data-icon="audio"
+					>Musiques</a></li>
+				</ul>
+			</div><!-- navbar -->
+		</div><!-- footer -->
+	</div><!-- page -->
+	
+	<div data-role="page" 
+		id="showphoto">
+		<div data-role="header"
+			data-position="fixed"
+			data-theme="a">
+			<a href="#photos"
+				data-transition="fade"
+				data-icon="back"
+				data-iconpos="notext"
+				>Photos</a>
+			<h1>Photos</h1>
+		</div><!-- header -->
+		<div data-role="content">
+			<div id="myphoto"></div>
+		</div><!-- content -->
+	</div><!-- page -->
+	
+	
+	<!-- Page: Tweets -->
+	<div id="tweets"
+		data-role="page"
+		data-title="View Source: Tweets">
+		<div data-role="header"
+			data-position="fixed"
+			data-id="vs_header">
+			<h1>Musiques</h1>
+			<a href="#home"
+				data-icon="home"
+				data-iconpos="notext"
+				>Home</a>
+			<a href="#info"
+				data-icon="info"
+				data-iconpos="notext"
+				data-rel="dialog"
+				>Info</a>
+		</div><!-- header -->
+		<div data-role="content" id="tweetlist">
+            <div data-role="controlgroup">
+			<a href="#nouvokonpa" 
+				data-role="button"
+				data-icon="audio"
+			>Nouveau Compas</a>
+			<a href="#nouvorap" 
+				data-role="button"
+				data-icon="audio"
+			>Nouveau Rap Kreyol</a>
+			<a href="#nouvorasin" 
+				data-role="button"
+				data-icon="audio"
+			>Nouveau Racine</a>
+			<a href="#search" 
+				data-role="button"
+				data-icon="audio"
+			>Effectuez une recherche</a>
+		</div>
+            
+		</div><!-- content -->
+		<div data-role="footer"
+			data-position="fixed"
+			data-id="vs_footer">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" 
+					data-role="button"
+					data-icon="home"
+					>Home</a></li>
+					<li><a href="#blog" 
+					data-role="button"
+					data-icon="bullets"
+					>Actualites</a></li>
+					<li><a href="#videos" 
+					data-role="button"
+					data-icon="video"
+					>Videos</a></li>
+					<li><a href="#photos" 
+					data-role="button"
+					data-icon="calendar"
+					>Événement</a></li>
+				</ul>
+			</div><!-- navbar -->
+		</div><!-- footer -->
+	</div><!-- page -->
+	
+	<div data-role="page"
+		id="info"
+		data-theme="a"
+		>
+		<div data-role="header">
+			<h1>Apropos de Ks Promo</h1>
+		</div>
+		<div data-role="content">
+			<p>KS PROMO SE NOUVO PLATFOM PROMSYON MEDIA EN AYITI , KELKESWA JAN DE PROMOTION AN TANKOU MIZIK, VIDEO, PROGRAM KONTAKTE NOU NAP TRAVAY ANSANM. VOYE INFO PROGRAM, MUSIQUE, VIDEO PAW LA NAN 509 36571014, APPLICATION SAA DEVOLOPE PA CERTIL REMY AK DEUS DJOVANY </p>
+			<a href="#"
+				data-role="button"
+				data-inline="true"
+				data-rel="back"
+				data-theme="a"
+			>cancel</a>
+			<a href="#home"
+				data-role="button"
+				data-inline="true"
+				data-theme="a"
+			>home</a>
+		</div>
+	</div>    
+</body>
+</html>
