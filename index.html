@@ -77,7 +77,7 @@
 			data-role="content"
 			id="postlist">
             
-           <ul data-role="listview" data-theme="c"  data-filter="true" data-filter-placeholder="recherche...">
+           <ul data-role="listview" data-theme="c"  id="newsfeed">
   <li><a href="#Carlo">
       <img src="img/carlo.png">
       <h3>Carlo Vieux</h3>
@@ -281,44 +281,8 @@ Le chanteur de Kreyol la, T-jo Zenny, a été impliqué dans un accident de la r
 		<div data-role="content">
 
 	<div data-role="content"data-theme="c">
-		 <ul data-role="listview" data-inset="true" data-filter="true" id="videolist">
-        <li>
-            <a href="videos/Natural_Bliss_Ft_Fantom_BRI_A.mp4" download>
-  <img border="0" src="img/fantom.jpg" alt="W3Schools" >
-                <h1>Natural bliss feat Fantom</h1>
-            <p>Cliquer pour telecharger</p>
-</a>
-        
-             
-            </li>
-             
-             <li>
-             <div class="card">
-	<div class="card-image">
-		<img alt="video" src="img/videotutumb/jperrybicRemix.png" />
-		<h3>J.Perry Ft. Admiral T, BIC et Gardy Girault</h3>
-        
-	</div>
-      <h1>Aba Blabla (remix)</h1> 
-     <a href="videos/Aba%20Blabla%20(remix)%20J.Perry%20Ft.%20Admiral%20T,%20BIC%20&%20Gardy%20Girault%20(OFFICIAL%20VIDEO).mp4" download="J_Perry_Abablabla_Remix">            <button data-icon="arrow-d">Telecharger</button></a>
-</div>
-            
-             
-            </li>
-             
-             <li>
-             <div class="card">
-	<div class="card-image">
-		<img alt="video" src="img/videotutumb/wadnerpeyizanlakoulakay.png" />
-		<h3>Wadner Peyizan</h3>
-        
-	</div>
-      <h1>Nan lakou lakay </h1> 
-     <a href="videos/Nan%20lakou%20lakay%20%5B%20Wadner%20Peyizan%20%5D%20officiel%20music%20video%20HD1080p.mp4" download="Wadner_Peyizan_nan_lakou_lakay">            <button data-icon="arrow-d">Telecharger</button></a>
-</div>
-            
-             
-            </li>
+		 <ul data-role="listview" data-inset="true" data-filter="true" id="movieList">
+       
          </ul>
 	</div><!-- content -->
 
@@ -736,6 +700,22 @@ Le chanteur de Kreyol la, T-jo Zenny, a été impliqué dans un accident de la r
 			</div><!-- navbar -->
 		</div><!-- footer -->
 	</div><!-- page -->
+    
+    
+    <div data-role="page" id="headline">
+    <div data-theme="a" data-role="header">
+        <a href="#home" class="ui-btn-left" data-transition="slide" data-direction="reverse">Back</a>                        
+        <h3>
+            Movie Info
+        </h3>
+    </div>        
+    <div data-role="content">
+        <ul data-role="listview"  id="movie-data" data-theme="a">
+            
+        </ul>
+    </div>
+</div>    
+
 	
 	<div data-role="page"
 		id="info"
@@ -759,5 +739,38 @@ Le chanteur de Kreyol la, T-jo Zenny, a été impliqué dans un accident de la r
 			>home</a>
 		</div>
 	</div>    
+    
+    
+ <script type="text/javascript">
+ $(document).ready(function(){
+   getNews("/videos.json");
+}); 
+  
+    function getNews(url){
+      $.getJSON(url, function(data){
+          var list_html="";
+          $("#newsfeed").empty();
+          for (var i=0; i<data.news.length; i++)
+              {
+                  var id = data.news[i].id;
+                  var title = data.news[i].title;
+                  var content = data.news[i].content;
+                  var date = data.news[i].date;
+                  var img = data.news[i].image;
+            
+                  
+                  list_html +='<ul data-role="listview" data-inset="true"> <li ><a href="#'+id+'"> <img src="'+img+'"><h2>'+title+'</h2><p>'+date+'</p> </a></li> </ul>';
+                  
+                  
+              }
+          $("#newsfeed").append(list_html);
+
+      }) ; 
+        
+    }
+     
+     
+</script>
+
 </body>
 </html>
